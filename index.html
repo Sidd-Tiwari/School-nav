@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>CBSE</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #edefcc;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #5f91c329;
+        }
+
+        #img img {
+            width: 80px;
+            height: 80px;
+        }
+
+        #link {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        #link a {
+            text-decoration: none;
+            font-size: 22px;
+            color: #001f3f;
+            padding: 4px 8px;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        #link a:not(:last-child)::after {
+            content: "|";
+            color: #001f3f;
+            position: absolute;
+            right: -10px;
+        }
+
+        #link a:hover {
+            background-color: #001f3f;
+            color: white;
+            border-radius: 5px 25px;
+            border: 2px solid #001f3f;
+        }
+
+        #body {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            border: 2px solid #001f3f;
+            border-radius: 2px 2px 40px 40px;
+            font-size: 55px;
+        }
+
+        h1:hover {
+            background-color: #001f3f;
+            color: white;
+            border-radius: 45px 45px 2px 2px;
+            border: 2px solid #001f3f;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="img">
+            <img src="https://upload.wikimedia.org/wikipedia/hi/archive/d/d5/20170528202850%21Cbse-logo.png"
+                alt="logo" />
+        </div>
+        <div id="link">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Faculty</a>
+            <a href="#">Enquiry</a>
+        </div>
+    </header>
+
+    <div id="body">
+        <h1>Welcome back to School</h1>
+    </div>
+</body>
+
+</html>
